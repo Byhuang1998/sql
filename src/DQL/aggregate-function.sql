@@ -28,3 +28,6 @@ select * from emp order by name desc;
 -- 8. limit m, n   从第m个开始， 查询n条记录
 select * from emp limit 0, 2;
 select * from emp limit 3, 5;
+
+-- 9. 执行顺序
+-- from where group by having select order by limit
