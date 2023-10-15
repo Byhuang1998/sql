@@ -1,0 +1,2 @@
+-- 自连接：可以是内连接，也可以是外连接。用什么连接类型根据业务决定
+-- select field1, field2 ... from table_name as t1 join / left jon / right join table_name t2 on t1.field = t2.field;
