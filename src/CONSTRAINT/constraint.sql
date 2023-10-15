@@ -24,3 +24,5 @@ desc tb_user;
 
 -- 添加外键 alter table child_table_name add constraint foreign key (field) references father_table_name(field);
 alter table test.tb_user add constraint foreign key (id) references test.user(id);
+-- 删除外键 alter table table_name drop foreign key fk_name;
+-- alter table test.tb_user drop foreign key tb_user_ibfk_1;
