@@ -26,3 +26,9 @@ desc tb_user;
 alter table test.tb_user add constraint foreign key (id) references test.user(id);
 -- 删除外键 alter table table_name drop foreign key fk_name;
 -- alter table test.tb_user drop foreign key tb_user_ibfk_1;
+-- 查询外键名称
+SELECT CONSTRAINT_NAME
+FROM information_schema.TABLE_CONSTRAINTS
+WHERE TABLE_SCHEMA = 'test'
+  AND TABLE_NAME = 'tb_user'
+  AND CONSTRAINT_TYPE = 'FOREIGN KEY';
