@@ -18,4 +18,9 @@ insert into test.user (name, age, gender) values ('ls', 21, '男'); -- default�
 insert into test.user (name, age, gender) values ('ls', 121, '男'); -- 违反age字段的check约束
 
 select * from test.user;
+select * from test.tb_user;
+show tables;
+desc tb_user;
 
+-- 添加外键 alter table child_table_name add constraint foreign key (field) references father_table_name(field);
+alter table test.tb_user add constraint foreign key (id) references test.user(id);
