@@ -1,0 +1,2 @@
+-- 左连接：left (outer) join. 会保存所有的左表数据，如果有右表数据可以匹配则显示，无右表数据则仅显示左表数据
+-- select field1, field2, ... from table_a left outer join table_b on table_a.field = table_b.field;
